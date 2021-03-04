@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/zyedidia/highlight"
+	"github.com/zyedidia/micro/cmd/micro/highlight"
 )
 
 func main() {

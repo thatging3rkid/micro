@@ -50,6 +50,8 @@ github.com/zyedidia/highlight v0.0.0-20170330143449-201131ce5cf5 h1:Zs6mpwXvlqpF
 github.com/zyedidia/highlight v0.0.0-20170330143449-201131ce5cf5/go.mod h1:c1r+Ob9tUTPB0FKWO1+x+Hsc/zNa45WdGq7Y38Ybip0=
 github.com/zyedidia/json5 v0.0.0-20200102012142-2da050b1a98d h1:zmDMkh22zXOB7gz8jFaI4GpI7llsPgzm38/jG0UgxjE=
 github.com/zyedidia/json5 v0.0.0-20200102012142-2da050b1a98d/go.mod h1:NDJSTTYWivnza6zkRapeX2/LwhKPEMQ7bJxqgDVT78I=
+github.com/zyedidia/micro v1.4.1 h1:OuszISyaEPK/8xxkklkh7dp2ragvKDEnr4RyHfJcQdo=
+github.com/zyedidia/micro v1.4.1/go.mod h1:/wcvhlXPvvvb6v176yUQE4gNzr+Erwz4pWfx7PU/cuE=
 github.com/zyedidia/poller v1.0.1 h1:Tt9S3AxAjXwWGNiC2TUdRJkQDZSzCBNVQ4xXiQ7440s=
 github.com/zyedidia/poller v1.0.1/go.mod h1:vZXJOHGDcuK08GXhF6IAY0ZFd2WcgOR5DOTp84Uk5eE=
 github.com/zyedidia/pty v2.0.0+incompatible h1:Ou5vXL6tvjst+RV8sUFISbuKDnUJPhnpygApMFGweqw=
