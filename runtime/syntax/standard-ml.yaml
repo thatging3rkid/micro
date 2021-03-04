@@ -1,0 +1,58 @@
+# Syntax definition file for Standard ML (SML)
+filetype: sml
+
+detect:
+    filename: "\\.sml$"
+
+rules:
+    # identifiers:
+    # 1st set -> start with a letter or prime, then sequence of letters, digits, primes, and underscores
+    - identifier: "\\b[A-Za-z'][0-9A-Za-z_']*\\b"
+
+    # 2nd set -> non-empty sequence of certain characters
+    - symbol.operator: "\\b[\\!\\%\\&\\$\\#\\+\\-\\/\\:\\<\\=\\>\\?\\@\\~\\^\\|\\*\\\\]+\\b"
+
+    # statements:
+    # declarations
+    - statement: "\\b(let|in|end|val|fn|local|while|do|handle|op|open|rec)\\b"
+
+    # types
+    - statement: "\\b(astype|withtype|datatype|type)\\b"
+
+    # conditionals
+    - statement: "\\b(if|then|else)\\b"
+
+    # patterns
+    - statement: "\\b(fun|case|=>|\\||->)\\b"
+
+    # boolean operations
+    - statement: "\\b(and|andalso|orelse)\\b"
+
+    # operation ordering
+    - statement: "\\b(infix|infixr|nonfix)\\b"
+
+    # exceptions
+    - statement: "\\b(exception|raise)\\b"
+
+    # modifiers
+    - statement: "\\b(as|with|of)\\b"
+
+    # types:
+    # type declarations (note: could add function type, but meh)
+    - type: "\\b(int|real|string|char|bool)\\b"
+
+    # constants:
+    - constant.bool: "\\b(true|false)\\b"
+
+    - constant.string:
+        start: "\""
+        end: "\""
+        skip: "\\\\."
+        rules:
+            - constant.specialChar: "%."
+            - constant.specialChar: "\\\\[abfnrtv'\\\"\\\\]"
+            - constant.specialChar: "\\\\([0-7]{3}|x[A-Fa-f0-9]{2}|u[A-Fa-f0-9]{4}|U[A-Fa-f0-9]{8})"
+    - comment:
+        start: "\\(\\*"
+        end: "\\*\\)"
+        rules: []
